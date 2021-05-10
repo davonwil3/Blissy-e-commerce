@@ -706,8 +706,11 @@ p {
   width: 320px;
   background-color: white;
   position: fixed;
-  left: 50%;
+  left: 0;
   top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(0%, -50%);
 }
 
 .total {
