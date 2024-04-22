@@ -23,7 +23,7 @@ function Store(props) {
   }, []);
 
   function fetchImage(options) {
-    fetch('http://localhost:10000/image', options)
+    fetch('https://bliss-server-1.onrender.com/image', options)
       .then(response => response.json())
       .then(data => {
         const source = data.source;
