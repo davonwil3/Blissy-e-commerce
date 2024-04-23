@@ -16,7 +16,6 @@ import { Link } from 'react-router-dom';
 function Cart() {
 
   const total = useSelector(state => state.calculate.number);
-
   const theBag = useSelector(state => state.bag.bagQuantity);
   var [trigger, setTrigger] = React.useState("");
 
@@ -73,10 +72,7 @@ function Cart() {
 
       <FooterRender />
     </div>
-
-
   )
 }
-
 
 export default Cart;
