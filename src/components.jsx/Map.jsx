@@ -10,10 +10,6 @@ function MapRender (){
     lat: 40.724030,
     lng: -73.352480
   }
-
-
-
-
   const Mapstyle =
     <div className="map">
       <h2 className="map-h2">Come Visit Us At Our Campus</h2>
@@ -32,32 +28,11 @@ function MapRender (){
         </GoogleMapReact>
       </div>
     </div>
-
-
-
-
-
-
-
-
 return(
 <div className="flex-container map-content">
-
 {Mapstyle}
-
 </div>
-
-
-
 )
-
-
-
-
-
-
-
 }
-
 
 export default MapRender;

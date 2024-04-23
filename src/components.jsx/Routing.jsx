@@ -13,40 +13,34 @@ import Checkout from './checkout'
 import About from "./about"
 import Contact from "./contact"
 
-function Routing(){
+function Routing() {
 
-
-
-return(
-<Router>
-<Provider store={store}>
-  <Switch>
-<Route path="/" exact component={Home}></Route>
-<Route path="/cart" exact component={Cart}></Route>
-<Route path="/collection" exact component={collectionMain}></Route>
-<Route path="/checkout" exact component={Checkout}></Route>
-<Route path="/about" exact component={About}></Route>
-<Route path="/contact" exact component={Contact}></Route>
-</Switch>
-</Provider>
-
-
-
-</Router>
-)
+  return (
+    <Router>
+      <Provider store={store}>
+        <Switch>
+          <Route path="/" exact component={Home}></Route>
+          <Route path="/cart" exact component={Cart}></Route>
+          <Route path="/collection" exact component={collectionMain}></Route>
+          <Route path="/checkout" exact component={Checkout}></Route>
+          <Route path="/about" exact component={About}></Route>
+          <Route path="/contact" exact component={Contact}></Route>
+        </Switch>
+      </Provider>
+    </Router>
+  )
 }
 
-function Home(){
+function Home() {
 
-
-return(
-<div>
-<Title/>;
-<Popular/>;
-<Collection/>;
-<Footer/>
-</div>
-)
+  return (
+    <div>
+      <Title />;
+      <Popular />;
+      <Collection />;
+      <Footer />
+    </div>
+  )
 }
 
 
