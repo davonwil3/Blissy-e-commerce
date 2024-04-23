@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 
 function Total(props) {
-
+// calc total
   console.log("restarted");
   var message = ""
   const cart = useSelector(state => state.cart);
